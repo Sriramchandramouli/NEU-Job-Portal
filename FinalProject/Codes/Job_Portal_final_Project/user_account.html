@@ -1,0 +1,315 @@
+<html>
+<title>Job Site</title>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<head>
+  <style>
+  .user-row {
+    margin-bottom: 14px;
+}
+
+.user-row:last-child {
+    margin-bottom: 10px;
+}
+
+.dropdown-user {
+    margin: 13px 0;
+    padding: 5px;
+    height: 50%;
+}
+
+.dropdown-user:hover {
+    cursor: pointer;
+}
+
+.table-user-information > tbody > tr {
+    border-top: 1px solid rgb(221, 221, 221);
+    width: 75%
+}
+
+.table-user-information > tbody > tr:first-child {
+    border-top: 0;
+}
+
+
+.table-user-information > tbody > tr > td {
+    border-top: 0;
+}
+.toppad
+{margin-top:40px;
+  margin-bottom: 40px;
+}
+
+.panel panel-info{
+  margin-bottom: 100px;
+}
+
+.panel-body{
+  margin-bottom: 10px;
+}
+
+  </style>
+
+
+<script>
+$(document).ready(function() {
+    var panels = $('.user-infos');
+    var panelsButton = $('.dropdown-user');
+    panels.hide();
+
+    //Click dropdown
+    panelsButton.click(function() {
+        //get data-for attribute
+        var dataFor = $(this).attr('data-for');
+        var idFor = $(dataFor);
+
+        //current button
+        var currentButton = $(this);
+        idFor.slideToggle(400, function() {
+            //Completed slidetoggle
+            if(idFor.is(':visible'))
+            {
+                currentButton.html('<i class="glyphicon glyphicon-chevron-up text-muted"></i>');
+            }
+            else
+            {
+                currentButton.html('<i class="glyphicon glyphicon-chevron-down text-muted"></i>');
+            }
+        })
+    });
+
+
+    $('[data-toggle="tooltip"]').tooltip();
+
+    $('button').click(function(e) {
+        e.preventDefault();
+        alert("This is a demo.\n :-)");
+    });
+});
+</script>
+
+<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+
+
+</head>
+<body>
+
+  <link rel="stylesheet" href="css/normalize.css">
+  <link rel="stylesheet" href="css/style.css">
+
+  <link rel='stylesheet prefetch' href='http://netdna.bootstrapcdn.com/bootstrap/3.0.3/css/bootstrap.min.css'>
+  </head>
+  <body>
+  <!--header-->
+  <div class="text-center">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html">Online Job Portal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-center">
+      <li class="active"><a href="home.html">Home</a></li>
+
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Learn About Us
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a href="aboutus.html"><span class="text-middle">About Us</span></a>
+                                </li>
+
+                                <li><a href="contactus/contactus.html"><span class="text-middle">Contact Us</span></a>
+                                </li>
+              </ul>
+            </li>
+
+
+
+      <li><a href="#">Find a Job</a></li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employer
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li>
+          <li><a href="postajob.html"><span class="text-middle">Post a Job</span></a>
+                          </li>
+
+                          <li><a href="viewresumes.html"><span class="text-middle">View Resumes</span></a>
+                          </li>
+        </ul>
+      </li>
+
+      <li class="dropdown">
+        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume Services
+        <span class="caret"></span></a>
+        <ul class="dropdown-menu">
+          <li>
+          <li><a href="uploadresume.html"><span class="text-middle">Upload Resume</span></a>
+                          </li>
+
+        </ul>
+      </li>
+
+
+      <li><a href="index.html">Blog</a></li>
+      <li><a href="user_account.html">Settings</a></li>
+
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signupForm.htm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+  </div>
+  </nav>
+  </div>
+
+  <br>
+
+
+
+  <!--user account-->
+
+<div class="container">
+      <div class="row">
+      <div class="col-md-5  toppad  pull-right col-md-offset-3 ">
+           <A href="edit.html" >Edit Profile</A>
+
+        <A href="edit.html" >Logout</A>
+
+<p class=" text-info">May 05,2016,03:00 pm </p>
+      </div>
+        <div class="col-xs-12 col-sm-12 col-md-6 col-lg-6 col-xs-offset-0 col-sm-offset-0 col-md-offset-3 col-lg-offset-3 toppad" >
+
+
+          <div class="panel panel-info">
+            <div class="panel-heading">
+              <h3 class="panel-title">Sheena Kristin A.Eschor</h3>
+            </div>
+            <div class="panel-body">
+              <div class="row">
+                <div class="col-md-3 col-lg-3 " align="center"> <img alt="User Pic" src="http://babyinfoforyou.com/wp-content/uploads/2014/10/avatar-300x300.png" class="img-circle img-responsive"> </div>
+
+                <div class=" col-md-9 col-lg-9 ">
+                  <table class="table table-user-information">
+                    <tbody>
+                      <tr>
+                        <td>Department:</td>
+                        <td>Programming</td>
+                      </tr>
+                      <tr>
+                        <td>Hire date:</td>
+                        <td>06/23/2013</td>
+                      </tr>
+                      <tr>
+                        <td>Date of Birth</td>
+                        <td>01/24/1988</td>
+                      </tr>
+
+                         <tr>
+                             <tr>
+                        <td>Gender</td>
+                        <td>Male</td>
+                      </tr>
+                        <tr>
+                        <td>Home Address</td>
+                        <td>Metro Manila,Philippines</td>
+                      </tr>
+                      <tr>
+                        <td>Email</td>
+                        <td><a href="mailto:info@support.com">info@support.com</a></td>
+                      </tr>
+                        <td>Phone Number</td>
+                        <td>123-4567-890(Landline)<br><br>555-4567-890(Mobile)
+                        </td>
+
+                      </tr>
+
+                    </tbody>
+                  </table>
+
+                  <a href="#" class="btn btn-primary">My Sales Performance</a>
+                  <a href="#" class="btn btn-primary">Team Sales Performance</a>
+                </div>
+              </div>
+            </div>
+                 <div class="panel-footer">
+                        <a data-original-title="Broadcast Message" data-toggle="tooltip" type="button" class="btn btn-sm btn-primary"><i class="glyphicon glyphicon-envelope"></i></a>
+                        <span class="pull-right">
+                            <a href="edit.html" data-original-title="Edit this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-warning"><i class="glyphicon glyphicon-edit"></i></a>
+                            <a data-original-title="Remove this user" data-toggle="tooltip" type="button" class="btn btn-sm btn-danger"><i class="glyphicon glyphicon-remove"></i></a>
+                        </span>
+                    </div>
+
+          </div>
+        </div>
+      </div>
+    </div>
+
+<br>
+<br>
+
+    <!--footer-->
+
+
+
+
+    <div class="text-center">
+
+    <nav class="navbar navbar-inverse navbar-fixed-bottom" style="padding-top: 10px;padding-bottom: 10px">
+          <div class="col-lg-12">
+              <ul class="nav navbar-nav navbar-center">
+                  <li><a href="/">© 2016 Northeastern Online Job Portal</a></li>
+
+
+              </ul>
+              <ul class="nav navbar-nav navbar-right">
+                <li><a href="sitemap.html">Sitemap</a></li>
+
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                    <li><a href="faq.html"><span class="text-middle">FAQ</span></a>
+                                    </li>
+
+                                    <li><a href="terms.html"><span class="text-middle">Terms & Conditions</span></a>
+                                    </li>
+
+                                    <li><a href="privacypolicy.html"><span class="text-middle"></span>Privacy Statement</a>
+                                    </li>
+                  </ul>
+                </li>
+
+
+
+                <li><a href="feedback.html">Rate Us</a></li>
+                <li><a href="../customer_chat">Chat</a></li>
+
+
+              </ul>
+          </div>
+
+
+
+    </nav>
+    </div>
+
+
+
+
+  </body>
+  </html>

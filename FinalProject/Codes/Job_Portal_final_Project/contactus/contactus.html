@@ -1,0 +1,192 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+  <title>Job Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta http-equiv="content-type" content="text/html; charset=utf-8" />
+
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <link rel="stylesheet" href="../css/normalize.css">
+  <link rel="stylesheet" href="../css/style.css">
+
+
+    <link rel="stylesheet" href="css/animate.css"> 
+</head>
+
+
+
+  <!--header-->
+  <header>
+  <div class="text-center">
+  <nav class="navbar navbar-inverse navbar-fixed-top">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="home.html">Online Job Portal</a>
+      </div>
+      <div class="collapse navbar-collapse" id="myNavbar">
+      <ul class="nav navbar-nav navbar-center">
+        <li class="active"><a href="home.html">Home</a></li>
+
+
+              <li class="dropdown">
+                <a class="dropdown-toggle" data-toggle="dropdown" href="#">Learn About Us
+                <span class="caret"></span></a>
+                <ul class="dropdown-menu">
+                  <li>
+                  <li><a href="../aboutus.html"><span class="text-middle">About Us</span></a>
+                                  </li>
+
+                                  <li><a href="/contactus"><span class="text-middle">Contact Us</span></a>
+                                  </li>
+                </ul>
+              </li>
+
+
+
+        <li><a href="#">Find a Job</a></li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employer
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+            <li><a href="postajob.html"><span class="text-middle">Post a Job</span></a>
+                            </li>
+
+                            <li><a href="viewresumes.html"><span class="text-middle">View Resumes</span></a>
+                            </li>
+          </ul>
+        </li>
+
+        <li class="dropdown">
+          <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume Services
+          <span class="caret"></span></a>
+          <ul class="dropdown-menu">
+            <li>
+            <li><a href="uploadresume.html"><span class="text-middle">Upload Resume</span></a>
+                            </li>
+
+          </ul>
+        </li>
+
+
+        <li><a href="../index.html">Blog</a></li>
+        <li><a href="../user_account.html">Settings</a></li>
+
+
+      </ul>
+      <ul class="nav navbar-nav navbar-right">
+        <li><a href="signupForm.htm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+        <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+      </ul>
+    </div>
+    </div>
+  </nav>
+  </div>
+
+  <br>
+
+</header>
+
+
+<body>
+
+<div class="row">
+<div class="col-sm-6 col-sm-offset-3">
+    <div class="well" style="margin-top: 10%;">
+    <h3>Send me a message</h3>
+    <form role="form" id="contactForm" data-toggle="validator" class="shake">
+        <div class="row">
+            <div class="form-group col-sm-6">
+                <label for="name" class="h4">Name</label>
+                <input type="text" class="form-control" id="name" placeholder="Enter name" required data-error="NEW ERROR MESSAGE">
+                <div class="help-block with-errors"></div>
+            </div>
+            <div class="form-group col-sm-6">
+                <label for="email" class="h4">Email</label>
+                <input type="email" class="form-control" id="email" placeholder="Enter email" required>
+                <div class="help-block with-errors"></div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="message" class="h4 ">Message</label>
+            <textarea id="message" class="form-control" rows="5" placeholder="Enter your message" required></textarea>
+            <div class="help-block with-errors"></div>
+        </div>
+        <button type="submit" id="form-submit" class="btn btn-success btn-lg pull-right ">Submit</button>
+        <div id="msgSubmit" class="h3 text-center" style="color:green;"></div>
+        <div class="clearfix"></div>
+    </form>
+    </div>
+</div>
+</div>
+
+</body>
+
+
+<!--footer-->
+
+
+
+
+<footer>
+
+<div class="text-center">
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="padding-top: 10px;padding-bottom: 10px">
+      <div class="col-lg-12">
+          <ul class="nav navbar-nav navbar-center">
+              <li><a href="/">© 2016 Northeastern Online Job Portal</a></li>
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="../sitemap.html">Sitemap</a></li>
+
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a href="../faq.html"><span class="text-middle">FAQ</span></a>
+                                </li>
+
+                                <li><a href="../terms.html"><span class="text-middle">Terms & Conditions</span></a>
+                                </li>
+
+                                <li><a href="../privacypolicy.html"><span class="text-middle"></span>Privacy Statement</a>
+                                </li>
+              </ul>
+            </li>
+
+
+
+            <li><a href="../feedback.html">Rate Us</a></li>
+            <li><a href="../../customer_chat">Chat</a></li>
+
+
+          </ul>
+      </div>
+
+
+
+</nav>
+</div>
+
+</footer>
+
+
+<script  type="text/javascript" src="js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="js/validator.min.js"></script>
+<script type="text/javascript" src="js/form-scripts.js"></script>
+</html>

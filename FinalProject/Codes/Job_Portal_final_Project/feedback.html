@@ -1,0 +1,311 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Job Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+</head>
+
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.3/jquery.min.js"></script>
+
+<style>
+@import url(https://fonts.googleapis.com/css?family=Satisfy);
+
+body {
+  max-width: 800px;
+  margin: 2em auto;
+  line-height: 1.5;
+  font-family: sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+
+body * + * {
+  margin-top: 0.01em;
+
+}
+
+:focus {
+  outline: none;
+}
+
+.label {
+  display: block;
+  font-weight: bold;
+  font-family: sans-serif;
+  font-size: 1.25em;
+  color: #000000;
+}
+
+[contenteditable] {
+  border: 1px solid #000;
+  box-shadow: inset 3px 3px 0 #ccc;
+  padding: 1em;
+  min-height: 5em;
+  font-size: 11px;
+}
+
+.button {
+  border: 0;
+  padding: 0.5em;
+  background: green;
+  color: #FFFFFF;
+  font-weight: bold;
+  text-decoration: none;
+  display: inline-block;
+  float: center;
+}
+
+.stars {
+  letter-spacing: -4px;
+  display: inline-block;
+}
+
+.stars > * {
+  color: #ccc;
+  font-size: 2em;
+  line-height: 1;
+  cursor: pointer;
+  padding: 0 0.25em 0 0;
+  margin-top: 0;
+}
+
+.stars > *:hover {
+  text-shadow: 0 0 5px green;
+}
+
+.stars:hover > *, .stars > .selected {
+  color: green;
+}
+
+.stars > *:hover ~ * {
+  color: #ccc;
+}
+
+.submitted {
+ font-size: 1.5em;
+ padding: 1em;
+ text-align: center;
+ font-weight: bold;
+ color: #fff;
+ background: #2D9F09;
+}
+
+.submitted::after {
+ content: '\0020\2713';
+}
+
+.errors p {
+  padding: 0.5em;
+  background: #cc0000;
+  color: #fff;
+}
+
+.you-rated {
+  margin-top: 0.125em;
+}
+
+.carousel-caption{
+  color: #000000;
+
+}
+
+.comments{
+  font-size: 1.5em;
+}
+
+</style>
+<header>
+    <!--header-->
+    <div class="text-center">
+    <nav class="navbar navbar-inverse navbar-fixed-top">
+      <div class="container-fluid">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="home.html">Online Job Portal</a>
+        </div>
+        <div class="collapse navbar-collapse" id="myNavbar">
+        <ul class="nav navbar-nav navbar-center">
+          <li class="active"><a href="home.html">Home</a></li>
+
+
+                <li class="dropdown">
+                  <a class="dropdown-toggle" data-toggle="dropdown" href="#">Learn About Us
+                  <span class="caret"></span></a>
+                  <ul class="dropdown-menu">
+                    <li>
+                    <li><a href="aboutus.html"><span class="text-middle">About Us</span></a>
+                                    </li>
+
+                                    <li><a href="contactus/contactus.html"><span class="text-middle">Contact Us</span></a>
+                                    </li>
+                  </ul>
+                </li>
+
+
+
+          <li><a href="#">Find a Job</a></li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employer
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+              <li><a href="postajob.html"><span class="text-middle">Post a Job</span></a>
+                              </li>
+
+                              <li><a href="viewresumes.html"><span class="text-middle">View Resumes</span></a>
+                              </li>
+            </ul>
+          </li>
+
+          <li class="dropdown">
+            <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume Services
+            <span class="caret"></span></a>
+            <ul class="dropdown-menu">
+              <li>
+              <li><a href="uploadresume.html"><span class="text-middle">Upload Resume</span></a>
+                              </li>
+
+            </ul>
+          </li>
+
+
+          <li><a href="index.html">Blog</a></li>
+          <li><a href="user_account.html">Settings</a></li>
+
+
+        </ul>
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="signupForm.htm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+          <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+        </ul>
+      </div>
+      </div>
+    </nav>
+    </div>
+  </header>
+
+    <br>
+<body>
+
+<div class="item">
+
+  <div class="container">
+   <div class="carousel-caption">
+   <p></p>
+   <br>
+   <br>
+   <h2>Your feedback matters to us!</h2>
+   <div class="form">
+     <div class="errors"></div>
+     <p class="label">Your comments:</p>
+     <div class="comments" id="comments" contenteditable="true"></div>
+     <p class="label">Rate Us:</p>
+     <div class="stars">
+       <span class="star-1">&#x2605;</span>
+       <span class="star-2">&#x2605;</span>
+       <span class="star-3">&#x2605;</span>
+       <span class="star-4">&#x2605;</span>
+       <span class="star-5">&#x2605;</span>
+     </div>
+     <div class="you-rated"></div>
+     <a class="button" href="#">Send Feedback </a>
+   </div>
+<br><br><br><br><br><br><br><br><br><br>
+</div>
+  </div>
+</div>
+
+
+</body>
+
+<!--footer-->
+
+
+
+<footer>
+
+
+<div class="text-center">
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="padding-top: 10px;padding-bottom: 10px">
+      <div class="col-lg-12">
+          <ul class="nav navbar-nav navbar-center">
+              <li><a href="/">© 2016 Northeastern Online Job Portal</a></li>
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sitemap.html">Sitemap</a></li>
+
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a href="faq.html"><span class="text-middle">FAQ</span></a>
+                                </li>
+
+                                <li><a href="terms.html"><span class="text-middle">Terms & Conditions</span></a>
+                                </li>
+
+                                <li><a href="privacypolicy.html"><span class="text-middle"></span>Privacy Statement</a>
+                                </li>
+              </ul>
+            </li>
+
+
+
+            <li><a href="feedback.html">Rate Us</a></li>
+            <li><a href="../customer_chat">Chat</a></li>
+
+
+          </ul>
+      </div>
+
+
+
+</nav>
+</div>
+
+
+
+</footer>
+<script>
+  window.clean = true;
+  $('[class^="star-"]').on('click', function() {
+    $(this).siblings().removeClass('selected');
+    $(this).addClass('selected');
+    $(this).prevAll().addClass('selected');
+    var index = $(this).index() + 1;
+    $('.you-rated').text('You rated '+index+' stars');
+  });
+  $('.button').on('click', function() {
+    if ($('#comments').is(':empty')) {
+      window.clean = false;
+      $('.errors').append('<p>Please submit a review.</p>');
+    }
+    if (window.clean) {
+      $('.form').remove();
+      $('<div class="submitted">Thank you!</div>').insertAfter('h2');
+    }
+    return false;
+  });
+</script>
+
+</html>

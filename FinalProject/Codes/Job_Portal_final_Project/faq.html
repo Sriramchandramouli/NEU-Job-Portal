@@ -1,0 +1,303 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Job Site</title>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+	<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	<link rel="stylesheet" type="text/css" href="../assets-2/css/reset.css">
+
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	<script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<link rel="stylesheet" href="css/normalize.css">
+	<link rel="stylesheet" href="css/style.css">
+
+	<script type="text/javascript" src="https://ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
+
+<style>
+html, body, div, span, applet, object, iframe, h1, h2, h3, h4, h5, h6, p, blockquote, pre, a, abbr, acronym, address, big, cite, code, del, dfn, em, img, ins, kbd, q, s, samp, small, strike, strong, sub, sup, tt, var, b, u, i, center, dl, dt, dd, ol, ul, li, fieldset, form, label, legend, table, caption, tbody, tfoot, thead, tr, th, td, article, aside, canvas, details, embed, figure, figcaption, footer, header, hgroup, menu, nav, output, ruby, section, summary, time, mark, audio, video {
+  margin: 0;
+  padding: 0;
+  border: 0;
+  font-size: 50%;
+  font: inherit;
+  vertical-align: baseline;
+  outline: none;
+  -webkit-box-sizing: border-box;
+  -moz-box-sizing: border-box;
+  box-sizing: border-box;
+}
+html { height: 101%; }
+body { font-size: 90%; line-height: 1; font-family: Arial, Tahoma, sans-serif; background: #e3e9f1; margin: 55px 0px; padding-bottom: 65px; }
+
+article, aside, details, figcaption, figure, footer, header, hgroup, menu, nav, section { display: block; }
+ol, ul { list-style: none; }
+
+blockquote, q { quotes: none; }
+blockquote:before, blockquote:after, q:before, q:after { content: ''; content: none; }
+strong { font-weight: bold; }
+
+table { border-collapse: collapse; border-spacing: 0; }
+img { border: 0; max-width: 100%; }
+
+/* typography */
+h1 { font-family: 'Paprika', Tahoma, Arial, sans-serif; font-size: 2.65em; line-height: 1.55em; margin-bottom: 10px; font-weight: normal; color: #6c635e; }
+h2 { font-size: 2.1em; line-height: 1.0em; font-weight: normal; letter-spacing: 0.05em; color: #778657; margin-bottom: 2px; }
+h3 { font-size: 1.45em; }
+
+p { display: block; font-size: 1.4em; line-height: 1.4em; color: #656565; margin-bottom: 15px; }
+
+a { color: #1565ba; text-decoration: none; }
+a:hover { text-decoration: underline; }
+
+/* wrapper div */
+#w {
+display: block;
+margin: 0 auto;
+padding: 18px 25px;
+min-width: 400px;
+max-width: 900px;
+background: #fff;
+-webkit-border-radius: 4px;
+-moz-border-radius: 4px;
+border-radius: 4px;
+-webkit-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+-moz-box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+box-shadow: 1px 1px 2px rgba(0,0,0,0.4);
+}
+
+/* question containers */
+.q { display: block; max-width: 550px; margin-bottom: 16px; }
+
+.qhead { margin-bottom: 3px; }
+.qhead a:hover { text-decoration: none; color: #428ddc; border-bottom: 4px solid #c4d3ee; }
+
+.answer { display: none; }
+
+
+</style>
+
+
+</head>
+
+<body>
+
+	<div class="text-center">
+	<nav class="navbar navbar-inverse navbar-fixed-top">
+	  <div class="container-fluid">
+	    <div class="navbar-header">
+	      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	        <span class="icon-bar"></span>
+	      </button>
+	      <a class="navbar-brand" href="home.html">Online Job Portal</a>
+	    </div>
+	    <div class="collapse navbar-collapse" id="myNavbar">
+	    <ul class="nav navbar-nav navbar-center">
+	      <li class="active"><a href="home.html">Home</a></li>
+
+
+	            <li class="dropdown">
+	              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Learn About Us
+	              <span class="caret"></span></a>
+	              <ul class="dropdown-menu">
+	                <li>
+	                <li><a href="aboutus.html"><span class="text-middle">About Us</span></a>
+	                                </li>
+
+	                                <li><a href="contactus/contactus.html"><span class="text-middle">Contact Us</span></a>
+	                                </li>
+	              </ul>
+	            </li>
+
+
+
+	      <li><a href="#">Find a Job</a></li>
+
+	      <li class="dropdown">
+	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employer
+	        <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li>
+	          <li><a href="postajob.html"><span class="text-middle">Post a Job</span></a>
+	                          </li>
+
+	                          <li><a href="viewresumes.html"><span class="text-middle">View Resumes</span></a>
+	                          </li>
+	        </ul>
+	      </li>
+
+	      <li class="dropdown">
+	        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume Services
+	        <span class="caret"></span></a>
+	        <ul class="dropdown-menu">
+	          <li>
+	          <li><a href="uploadresume.html"><span class="text-middle">Upload Resume</span></a>
+	                          </li>
+
+	        </ul>
+	      </li>
+
+
+	      <li><a href="index.html">Blog</a></li>
+	      <li><a href="user_account.html">Settings</a></li>
+
+
+	    </ul>
+	    <ul class="nav navbar-nav navbar-right">
+	      <li><a href="signupForm.htm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+	      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+	    </ul>
+	  </div>
+	  </div>
+	</nav>
+	</div>
+
+	<br>
+	<div id="w">
+    <h1>Frequently Asked Questions</h1>
+    <p>We get lots of mail and always want to answer your inquiries. That's why our staff has created this mini FAQ page for the most commonly asked questions. Just click on any question to display the answer inline on the page.</p>
+
+    <h2>Website Interface</h2>
+    <div class="q">
+      <h3 class="qhead"><a href="#q01">How do I log into the website interface?</a></h3>
+      <div class="answer" id="q01"><p>
+
+				You need to have a valid account to login to our website and perform search operation on the jobs.
+</p>
+			</div></div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q02">Where can I find resources for learning?</a></h3>
+      <div class="answer" id="q02"><p>
+				The Home page has a link for blogs. The blogs page have plenty of articles and you can make the best use of it
+</p>
+			</div></div>
+
+
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q04">How Does the Search Feature Work?</a></h3>
+      <div class="answer" id="q04"><p>
+We have an optimized search feature for searching jobs. You will be notified if employer views your resume.
+</p></div>
+
+			</div>
+
+		<h2>User Accounts</h2>
+		<div class="q">
+		  <h3 class="qhead"><a href="#q05">Can I have more than one user account?</a></h3>
+		  <div class="answer" id="q05"><p>Nope, sorry. You need to be a Northeastern employee or student to access this website</p></div>
+		</div>
+
+		<div class="q">
+		  <h3 class="qhead"><a href="#q06">How do I edit my profile?</a></h3>
+		  <div class="answer" id="q06"><p>
+You have Settings menu in the home page. Clicking it will take you to User Account page, where you can edit the profile.
+
+</p>
+			</div></div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q07">What are the various user roles?</a></h3>
+      <div class="answer" id="q07">
+<p>
+
+	The employers have the ability to post jobs and also view the resumes submitted by the candidates. The job seekers can upload the resume, search for jobs and then apply to them.
+
+			</p></div>
+    </div>
+
+
+    <h2>Spam &amp; Support</h2>
+    <div class="q">
+      <h3 class="qhead"><a href="#q08">How can I get in touch with Staff Support?</a></h3>
+      <div class="answer" id="q08"><p>
+<p>
+You can either send a Feedback. Otherwise, there is a contact us option in home page, through which you can e-mail us.
+
+</p>
+			</div></div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q09">Will I be able to delete all my account data?</a></h3>
+      <div class="answer" id="q09"><p>
+You can deactivate and delete account.
+			</p></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q10">Is there a limit to the job applications per day?</a></h3>
+      <div class="answer" id="q10"><p>
+No, there's no limit.
+			</p></div>
+    </div>
+
+    <div class="q">
+      <h3 class="qhead"><a href="#q11"></a></h3>
+      <div class="answer" id="q11"><p></p></div>
+    </div>
+  </div><!-- end #w -->
+<script type="text/javascript">
+$(document).ready(function(){
+  $(".qhead a").on("click", function(e){
+    e.preventDefault();
+    var href = $(this).attr("href");
+
+    $(href).fadeToggle(450);
+  });
+});
+</script>
+<!--footer-->
+
+
+
+<div class="text-center">
+
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="padding-top: 10px;padding-bottom: 10px">
+      <div class="col-lg-12">
+          <ul class="nav navbar-nav navbar-center">
+              <li><a href="/">© 2016 Northeastern Online Job Portal</a></li>
+
+
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="sitemap.html">Sitemap</a></li>
+
+
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a href="faq.html"><span class="text-middle">FAQ</span></a>
+                                </li>
+
+                                <li><a href="terms.html"><span class="text-middle">Terms & Conditions</span></a>
+                                </li>
+
+                                <li><a href="privacypolicy.html"><span class="text-middle"></span>Privacy Statement</a>
+                                </li>
+              </ul>
+            </li>
+
+
+
+            <li><a href="feedback.html">Rate Us</a></li>
+            <li><a href="../customer_chat">Chat</a></li>
+
+
+          </ul>
+      </div>
+
+
+
+</nav>
+</div>
+
+
+
+
+</body>
+</html>

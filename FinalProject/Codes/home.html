@@ -1,0 +1,155 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <title>Job Site</title>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	<script type="text/javascript"
+  src="https://maps.googleapis.com/maps/api/js?key=AIzaSyAI_DaubDzVzYzVoVJ83Pc_KJAMd0HeNlQ&libraries=geometry,places">
+</script>
+	<script async defer src="https://maps.googleapis.com/maps/api/js?libraries=places&key=AIzaSyAI_DaubDzVzYzVoVJ83Pc_KJAMd0HeNlQ&callback=initMap"
+type="text/javascript"></script>
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+  <script>
+            function initMap() {
+                var input = document.getElementById('location');
+                var autocomplete = new google.maps.places.Autocomplete(input);
+            }
+  
+            google.maps.event.addDomListener(window, 'load', init);
+        </script>
+  <style type="text/css">
+  body{
+background-image: url("images/homebg.jpg");
+background-repeat: no-repeat;
+background-size:100%;
+}
+
+.background-image {
+z-index: 1;
+-webkit-filter: blur(5px);
+  -moz-filter: blur(5px);
+  -o-filter: blur(5px);
+  -ms-filter: blur(5px);
+  filter: blur(5px);
+}
+  </style>
+</head>
+<body>
+<!--header-->
+<div class="text-center">
+<nav class="navbar navbar-inverse navbar-fixed-top">
+  <div class="container-fluid">
+    <div class="navbar-header">
+      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+        <span class="icon-bar"></span>
+      </button>
+      <a class="navbar-brand" href="home.html">Online Job Portal</a>
+    </div>
+    <div class="collapse navbar-collapse" id="myNavbar">
+    <ul class="nav navbar-nav navbar-center">
+      <li><a href="findJob.php">Find a Job</a></li>
+      <li><a href="Job_Portal_final_Project/index.html">Blog</a></li>
+	  <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Learn About Us
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a href="Job_Portal_final_Project/aboutus.html"><span class="text-middle">About Us</span></a>
+                                </li>
+
+                                <li><a href="Job_Portal_final_Project/contactus/contactus.html"><span class="text-middle">Contact Us</span></a>
+                                </li>
+              </ul>
+            </li>
+			</li>
+      <li><a href="Job_Portal_final_Project/user_account.html">Settings</a></li>
+
+
+    </ul>
+    <ul class="nav navbar-nav navbar-right">
+      <li><a href="signupForm.php"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+      <li><a href="login.php"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+    </ul>
+  </div>
+  </div>
+</nav>
+</div>
+
+<br>
+<div class="item">
+
+  <div class="container">
+   <div class="carousel-caption">
+   <p></p>
+  <h1>Build Your Future!</h1>
+  <p><b>We have many job vacancies right now!</b></p>
+  <form action="searchJob.php" method="POST" ng-app="myApp" ng-controller="findJobController" name="myForm" novalidate>
+  
+  
+  <div class="row">
+  <div class="form-group col-md-3 col-md-offset-3">
+					<input type="" name="keywords" class="form-control" id="keywords" value="" placeholder="Job Title / Skills / Company"> 
+				</div>
+  
+                             <div class="form-group col-md-3">
+					<input type="" name="location" class="form-control" id="location" value="">
+				</div>
+		 <div class="form-group col-md-2">		
+    <button type="submit" class="btn btn-primary">Find Job</button>
+	</div>
+	</div>
+	<div></div>
+	<div><a href="Job_Portal_final_Project/h1b-graphs/index.html" style="color:blue; text-decoration:none;"><h3>Check H1B Information<h3></a></div>
+  </form>
+  
+<br><br><br><br><br><br><br><br><br><br>
+</div>
+  </div>
+</div>
+
+<!--footer-->
+<div class="text-center">
+<nav class="navbar navbar-inverse navbar-fixed-bottom" style="padding-top: 10px;padding-bottom: 10px">
+      <div class="col-lg-12">
+          <ul class="nav navbar-nav navbar-center">
+              <li><a href="#">© 2016 Northeastern Online Job Portal</a></li>
+          </ul>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="Job_Portal_final_Project/sitemap.html">Sitemap</a></li>
+            <li class="dropdown">
+              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+              <span class="caret"></span></a>
+              <ul class="dropdown-menu">
+                <li>
+                <li><a href="Job_Portal_final_Project/faq.html"><span class="text-middle">FAQ</span></a>
+                                </li>
+
+                                <li><a href="Job_Portal_final_Project/terms.html"><span class="text-middle">Terms & Conditions</span></a>
+                                </li>
+
+                                <li><a href="Job_Portal_final_Project/privacypolicy.html"><span class="text-middle"></span>Privacy Statement</a>
+                                </li>
+              </ul>
+            </li>
+            <li><a href="Job_Portal_final_Project/feedback.html">Rate Us</a></li>
+            <li><a href="customer_chat">Chat</a></li>
+          </ul>
+      </div>
+</nav>
+</div>
+
+
+
+</nav>
+</div>
+</body>
+
+</html>

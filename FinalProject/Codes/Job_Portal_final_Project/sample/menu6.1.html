@@ -1,0 +1,214 @@
+<!DOCTYPE html>
+<html lang="en">
+	<head>
+		<meta charset="utf-8">
+		<meta name="viewport" content="width=device-width,initial-scale=1.0">
+		<title>jquery.breadcrumbs-generator</title>
+		<link rel="stylesheet" href="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/css/bootstrap.min.css">
+	  <script src="https://ajax.googleapis.com/ajax/libs/jquery/1.12.4/jquery.min.js"></script>
+	  <script src="http://maxcdn.bootstrapcdn.com/bootstrap/3.3.6/js/bootstrap.min.js"></script>
+	  <link rel="stylesheet" href="breadcrumbs.css">
+	  <script src="http://code.jquery.com/jquery.min.js"></script>
+	  <script src="../jquery.breadcrumbs-generator.js"></script>
+
+
+		<script>
+			jQuery(document).ready(function($) {
+				$('#breadcrumbs').breadcrumbsGenerator();
+			});
+		</script>
+	</head>
+	<body>
+
+		<!--header-->
+		<div class="text-center">
+		<nav class="navbar navbar-inverse navbar-fixed-top">
+		  <div class="container-fluid">
+		    <div class="navbar-header">
+		      <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#myNavbar">
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		        <span class="icon-bar"></span>
+		      </button>
+		      <a class="navbar-brand" href="home.html">Online Job Portal</a>
+		    </div>
+		    <div class="collapse navbar-collapse" id="myNavbar">
+		    <ul class="nav navbar-nav navbar-center">
+		      <li class="active"><a href="home.html">Home</a></li>
+
+
+		            <li class="dropdown">
+		              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Learn About Us
+		              <span class="caret"></span></a>
+		              <ul class="dropdown-menu">
+		                <li>
+		                <li><a href="aboutus.html"><span class="text-middle">About Us</span></a>
+		                                </li>
+
+		                                <li><a href="contact.html"><span class="text-middle">Contact Us</span></a>
+		                                </li>
+		              </ul>
+		            </li>
+
+
+
+		      <li><a href="#">Find a Job</a></li>
+
+		      <li class="dropdown">
+		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Employer
+		        <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li>
+		          <li><a href="postajob.html"><span class="text-middle">Post a Job</span></a>
+		                          </li>
+
+		                          <li><a href="viewresumes.html"><span class="text-middle">View Resumes</span></a>
+		                          </li>
+		        </ul>
+		      </li>
+
+		      <li class="dropdown">
+		        <a class="dropdown-toggle" data-toggle="dropdown" href="#">Resume Services
+		        <span class="caret"></span></a>
+		        <ul class="dropdown-menu">
+		          <li>
+		          <li><a href="uploadresume.html"><span class="text-middle">Upload Resume</span></a>
+		                          </li>
+
+		        </ul>
+		      </li>
+
+
+		      <li><a href="index.html">Blog</a></li>
+		      <li><a href="user_account.html">Settings</a></li>
+
+
+		    </ul>
+		    <ul class="nav navbar-nav navbar-right">
+		      <li><a href="signupForm.htm"><span class="glyphicon glyphicon-user"></span> Sign Up</a></li>
+		      <li><a href="login.html"><span class="glyphicon glyphicon-log-in"></span> Login</a></li>
+		    </ul>
+		  </div>
+		  </div>
+		</nav>
+		</div>
+
+		<br>
+		<br>
+
+
+
+
+
+		<h1>GET TO KNOW WHERE YOU WANT TO GO!</h1>
+
+
+		<hr>
+		<ol id="breadcrumbs"></ol>
+		<nav id="sitemaps">
+		  <h2>Sitemaps</h2>
+		  <ul>
+		    <li>
+		      <a href="../sitemap.html">Home</a>
+					<img align="right" src="http://mediumfour.com/wp-content/uploads/2015/12/5-Web-Design-Tricks-to-Make-Your-Website-SEO-Friendly.jpg" height="300px" width="600px"></img>
+
+		      <ul>
+		        <li>
+		          <a href="menu1.html">About Us</a>
+		<ul>
+		  <li><a href="menu1.1.html">Contact Us</a></li>
+
+		</ul>
+		        </li>
+		        <li><a href="menu2.html">Find a Job</a></li>
+						<li><a href="menu3.html">Employer</a>
+		<ul>
+		        <li><a href="menu3.1.html">Post a Job</a></li>
+		        <li><a href="menu3.2.html">View Resumes</a></li>
+		</ul></li>
+		        <li>
+		          <a href="menu4.html">Resume Services</a>
+		          <ul>
+		            <li><a href="menu4.1.html">Upload Resume</a></li>
+		            </ul></li>
+
+		            <li><a href="menu5.html">Blog</a></li>
+
+
+		        <li>      <a href="menu6.html">Help</a>
+		              <ul>
+		                <li><a href="menu6.1.html">FAQ</a></li>
+		                <li><a href="menu6.2.html">Terms and Conditions</a></li>
+		                <li><a href="menu6.3.html">Privacy Statement</a></li>
+		              </ul>
+		            </li>
+		            <li><a href="menu7.html">Sign Up</a></li>
+
+		            <li><a href="menu8.html">My Account</a></li>
+
+		            <li><a href="menu9.html">Rate Us</a></li>
+
+		          </ul>
+		        </li>
+		      </ul>
+		    </li>
+		  </ul>
+		</nav>
+
+
+
+
+		<!--footer-->
+
+
+
+
+
+
+		<div class="text-center">
+
+		<nav class="navbar navbar-inverse navbar-fixed-bottom" style="padding-top: 10px;padding-bottom: 10px">
+		      <div class="col-lg-12">
+		          <ul class="nav navbar-nav navbar-center">
+		              <li><a href="/">© 2016 Northeastern Online Job Portal</a></li>
+
+
+		          </ul>
+		          <ul class="nav navbar-nav navbar-right">
+		            <li><a href="sitemap.html">Sitemap</a></li>
+
+
+		            <li class="dropdown">
+		              <a class="dropdown-toggle" data-toggle="dropdown" href="#">Help
+		              <span class="caret"></span></a>
+		              <ul class="dropdown-menu">
+		                <li>
+		                <li><a href="faq.html"><span class="text-middle">FAQ</span></a>
+		                                </li>
+
+		                                <li><a href="Termsandconditions.html"><span class="text-middle">Terms & Conditions</span></a>
+		                                </li>
+
+		                                <li><a href="privacy.html"><span class="text-middle"></span>Privacy Statement</a>
+		                                </li>
+		              </ul>
+		            </li>
+
+
+
+		            <li><a href="feedback.html">Rate Us</a></li>
+		            <li><a href="livechat.html">Chat</a></li>
+
+
+		          </ul>
+		      </div>
+
+
+
+		</nav>
+		</div>
+
+
+
+	</body>
+</html>
